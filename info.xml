@@ -1,0 +1,9 @@
+<c2addon>
+  <type>plugin</type>
+  <name>Clay</name>
+  <version>0.0.1</version>
+  <author>Clay.io</author>
+  <website>http://clay.io</website>
+  <documentation>https://github.com/claydotio/clay-construct-2</documentation>
+  <description>Adds social and monetization features from Clay.io</description>
+</c2addon>
