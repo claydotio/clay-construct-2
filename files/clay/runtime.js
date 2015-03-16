@@ -58,7 +58,7 @@ cr.plugins_.Clay = function( runtime )
     o=l.getElementsByTagName(a)[0];i.async=1;i.src=y;o.parentNode.insertBefore(i,o)
     })(window,document,'script','//cdn.wtf/sdk/v1/clay_sdk.js','Clay');
 
-    Clay('init', {gameId: '' + this.properties[0]})
+    Clay('init', {gameId: '' + this.properties[0]});
   };
 
   // only called if a layout object - draw to a canvas 2D context
@@ -87,20 +87,20 @@ cr.plugins_.Clay = function( runtime )
   var acts = pluginProto.acts;
 
   acts.client_share_any = function ( message ) {
-    Clay('client.share.any', {text: message})
-  }
+    Clay('client.share.any', {text: message});
+  };
 
   acts.ui_ads_banner = function ( position ) {
     Clay('ui.ads.banner', {position: position}, function (err, ad) {
-      document.body.appendChild(ad.$el)
-    )}
-  }
+      document.body.appendChild(ad.$el);
+    });
+  };
 
   acts.ui_ads_page = function () {
     Clay('ui.ads.page', function (err, ad) {
-      document.body.appendChild(ad.$el)
-    )}
-  }
+      document.body.appendChild(ad.$el);
+    });
+  };
 
   //////////////////////////////////////
   // Expressions
